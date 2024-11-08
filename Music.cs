@@ -2,7 +2,7 @@
 
 namespace ReproductorMusica_2025_I
 {
-    internal struct Music:ICaratula 
+    internal class Music:ICaratula 
     {
         #region Campos
         internal string title;
@@ -22,6 +22,20 @@ namespace ReproductorMusica_2025_I
             this.artist = Artist;
             this.album = Album;
         }
+
+        public Music(string Title, string Artist, 
+            string Album,int TimeStart, int TimeEnd,
+            string PathAlbum  )
+        {
+            title = Title;
+            artist = Artist;
+            album = Album;
+            this.TimeStart = TimeStart;
+            this.TimeEnd = TimeEnd;
+            this.PathAlbum = PathAlbum; 
+
+        }
+
 
 
 
