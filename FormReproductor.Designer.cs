@@ -52,6 +52,7 @@
             this.pgbTimeLapse = new System.Windows.Forms.ProgressBar();
             this.lbStartTime = new System.Windows.Forms.Label();
             this.lbEndTime = new System.Windows.Forms.Label();
+            this.lbDirectorio = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbAlbum)).BeginInit();
             this.SuspendLayout();
@@ -217,7 +218,6 @@
             // 
             // ptbAlbum
             // 
-            this.ptbAlbum.Image = global::ReproductorMusica_2025_I.Properties.Resources.jazz_queen_album;
             this.ptbAlbum.Location = new System.Drawing.Point(616, 58);
             this.ptbAlbum.Name = "ptbAlbum";
             this.ptbAlbum.Size = new System.Drawing.Size(196, 203);
@@ -250,6 +250,15 @@
             this.lbEndTime.TabIndex = 5;
             this.lbEndTime.Text = "3:15 [s]";
             // 
+            // lbDirectorio
+            // 
+            this.lbDirectorio.AutoSize = true;
+            this.lbDirectorio.Location = new System.Drawing.Point(284, 24);
+            this.lbDirectorio.Name = "lbDirectorio";
+            this.lbDirectorio.Size = new System.Drawing.Size(52, 13);
+            this.lbDirectorio.TabIndex = 1;
+            this.lbDirectorio.Text = "Directorio";
+            // 
             // FormReproductor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -264,6 +273,7 @@
             this.Controls.Add(this.lbArtist);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbTitle);
+            this.Controls.Add(this.lbDirectorio);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lstbSongs);
             this.Controls.Add(this.menuStrip1);
@@ -305,6 +315,7 @@
         private System.Windows.Forms.ProgressBar pgbTimeLapse;
         private System.Windows.Forms.Label lbStartTime;
         private System.Windows.Forms.Label lbEndTime;
+        private System.Windows.Forms.Label lbDirectorio;
     }
 }
 

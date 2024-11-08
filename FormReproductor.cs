@@ -43,13 +43,14 @@ namespace ReproductorMusica_2025_I
             InitializeComponent();
             songs = new List<Music>();
             loadSongs();
-            ptbAlbum.Image = Image.FromFile(@"Resources/jazz_queen_album.png");
+            lbDirectorio.Text += " " + Environment.CurrentDirectory;
+            ptbAlbum.Image = Image.FromFile(@"..\..\Resources\jazz_queen_album.png");
         }
 
         private void loadSongs()
         {
             songs.Add(
-                new Music("Besos en Guerra","Morat","Balas Perdidas",0,15, @"Resources/jazz_queen_album.png"));
+                new Music("Besos en Guerra","Morat","Balas Perdidas"));
             songs.Add(
                 new Music("Lento", "Julieta Venegas", "Sí"));
             songs.Add(

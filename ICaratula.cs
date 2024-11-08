@@ -4,8 +4,9 @@ namespace ReproductorMusica_2025_I
     internal interface ICaratula
     {
         
-        int timeEnd { get; set; }
+        int TimeStart { get; set; }
+        int TimeEnd { get; set; }
 
-        string pathAlbum { get; set; }
+        string PathAlbum { get; set; }
     }
 }
