@@ -9,32 +9,9 @@ namespace ReproductorMusica_2025_I
 {
     public partial class FormReproductor : Form
     {
-        public string user
-        {
-            get;
-            set;
-        }
-        public string password
-        {
-            get;
-            set;   
-        }
-
+       
         private List<Music> songs;
 
-        private static FormReproductor instance;
-
-        public static FormReproductor Instance
-        {
-            get {
-                if(instance == null  || instance.IsDisposed)
-                {
-                    instance = new FormReproductor();
-                }
-                return instance;
-            }
-
-        }
 
 
 
@@ -43,18 +20,22 @@ namespace ReproductorMusica_2025_I
             InitializeComponent();
             songs = new List<Music>();
             loadSongs();
-            lbDirectorio.Text += " " + Environment.CurrentDirectory;
+            /// lbDirectorio.Text += " " + Environment.CurrentDirectory;
+            // ptbAlbum.Image = Image.FromFile(@"..\..\Resources\jazz_queen_album.png");
+            lbPath.Text += " " + Environment.CurrentDirectory;
+
+
             ptbAlbum.Image = Image.FromFile(@"..\..\Resources\jazz_queen_album.png");
         }
 
         private void loadSongs()
         {
             songs.Add(
-                new Music("Besos en Guerra","Morat","Balas Perdidas"));
+                new Music("Besos en Guerra","Morat","Balas Perdidas",0,120, @"..\..\Resources\balas_perdidas.jpg"));
             songs.Add(
-                new Music("Lento", "Julieta Venegas", "Sí"));
+                new Music("Lento", "Julieta Venegas", "Sí",0,180, @"..\..\Resources\si.jpg"));
             songs.Add(
-                new Music("Dynamite", "Talio Cruz", "Rock Star"));
+                new Music("Dynamite", "Talio Cruz", "Rock Star",0,140, @"..\..\Resources\taio_cruz_rockstar.png"));
 
 
             foreach (var song in songs)

@@ -52,7 +52,7 @@
             this.pgbTimeLapse = new System.Windows.Forms.ProgressBar();
             this.lbStartTime = new System.Windows.Forms.Label();
             this.lbEndTime = new System.Windows.Forms.Label();
-            this.lbDirectorio = new System.Windows.Forms.Label();
+            this.lbPath = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbAlbum)).BeginInit();
             this.SuspendLayout();
@@ -250,14 +250,14 @@
             this.lbEndTime.TabIndex = 5;
             this.lbEndTime.Text = "3:15 [s]";
             // 
-            // lbDirectorio
+            // lbPath
             // 
-            this.lbDirectorio.AutoSize = true;
-            this.lbDirectorio.Location = new System.Drawing.Point(284, 24);
-            this.lbDirectorio.Name = "lbDirectorio";
-            this.lbDirectorio.Size = new System.Drawing.Size(52, 13);
-            this.lbDirectorio.TabIndex = 1;
-            this.lbDirectorio.Text = "Directorio";
+            this.lbPath.AutoSize = true;
+            this.lbPath.Location = new System.Drawing.Point(286, 24);
+            this.lbPath.Name = "lbPath";
+            this.lbPath.Size = new System.Drawing.Size(58, 13);
+            this.lbPath.TabIndex = 1;
+            this.lbPath.Text = "Directorio: ";
             // 
             // FormReproductor
             // 
@@ -273,7 +273,7 @@
             this.Controls.Add(this.lbArtist);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbTitle);
-            this.Controls.Add(this.lbDirectorio);
+            this.Controls.Add(this.lbPath);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lstbSongs);
             this.Controls.Add(this.menuStrip1);
@@ -315,7 +315,7 @@
         private System.Windows.Forms.ProgressBar pgbTimeLapse;
         private System.Windows.Forms.Label lbStartTime;
         private System.Windows.Forms.Label lbEndTime;
-        private System.Windows.Forms.Label lbDirectorio;
+        private System.Windows.Forms.Label lbPath;
     }
 }
 
