@@ -59,6 +59,11 @@ namespace ReproductorMusica_2025_I
             lbArtist.Text = song.artist;
             lbTitle.Text = song.title;
             lbAlbum.Text = song.album;
+
+            lbStartTime.Text = song.timeStart.ToString();
+            lbEndTime.Text = song.timeEnd.ToString();
+            ptbAlbum.Image = Image.FromFile(song.pathAlbum);
+
         }
 
         private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
